@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Roovel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dIg-N6-Rc2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-ZF-LLq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click and hold to measure" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekW-CE-w78">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="nJz-dM-BRO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gdW-ZF-LLq" firstAttribute="top" secondItem="dIg-N6-Rc2" secondAttribute="top" id="7jT-gC-HHK"/>
+                            <constraint firstItem="ekW-CE-w78" firstAttribute="leading" secondItem="Kef-iX-m7U" secondAttribute="leading" id="8zg-1l-xPk"/>
+                            <constraint firstItem="gdW-ZF-LLq" firstAttribute="leading" secondItem="Kef-iX-m7U" secondAttribute="leading" id="Pn4-sD-cIF"/>
+                            <constraint firstItem="gdW-ZF-LLq" firstAttribute="trailing" secondItem="Kef-iX-m7U" secondAttribute="trailing" id="bx2-Cx-kLR"/>
+                            <constraint firstItem="ekW-CE-w78" firstAttribute="top" secondItem="dIg-N6-Rc2" secondAttribute="top" id="iJO-dl-zjx"/>
+                            <constraint firstItem="ekW-CE-w78" firstAttribute="trailing" secondItem="Kef-iX-m7U" secondAttribute="trailing" id="muP-1b-cZZ"/>
+                            <constraint firstItem="gdW-ZF-LLq" firstAttribute="bottom" secondItem="Kef-iX-m7U" secondAttribute="bottom" id="yIr-92-ynj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kef-iX-m7U"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nkY-7x-DTp"/>
+                    <connections>
+                        <outlet property="measureLabel" destination="ekW-CE-w78" id="K4M-WN-I2k"/>
+                        <outlet property="sceneView" destination="gdW-ZF-LLq" id="lWu-GW-UOB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475.36231884057975" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+</document>
