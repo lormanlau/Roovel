@@ -82,9 +82,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func chooseDegree(x: Double, y: Double, z: Double, xyDegree: Int, xzDegree: Int, yzDegree: Int)-> Int{
         var chosenDegree: Int = 0
         
-        let yz = yzToScale(yzDegree: yzDegree)
+        
         let xz = xzToScale(xzDegree: xzDegree)
         let xy = xyToScale(xyDegree: xyDegree)
+        let yz = yzToScale(yzDegree: yzDegree)
         
         if z != 0 && x/z < 1 && x/z > -1 && y/z > -1 && y/z < 1  {
             if abs(yz) > abs(xz) {
@@ -95,59 +96,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }else {
             chosenDegree = xy
         }
-        
+
         return chosenDegree
-    }
-    
-    //the follow three functions scale -180~180 to -90~90
-    func xyToScale(xyDegree: Int)-> Int{
-        var scaledDegree: Int = 0;
-        
-        if xyDegree <= -135 {
-            scaledDegree = -xyDegree - 180
-        } else if xyDegree <= -45 {
-            scaledDegree = xyDegree + 90
-        } else if xyDegree <= 45 {
-            scaledDegree = -xyDegree
-        } else if xyDegree <= 135 {
-            scaledDegree = xyDegree - 90 + 1
-        } else {
-            scaledDegree = -xyDegree + 180 - 1
-        }
-        
-        return scaledDegree
-    }
-    
-    func yzToScale(yzDegree: Int)-> Int{
-        var scaledDegree: Int = 0
-        
-        if yzDegree > -45 && yzDegree < 0 {
-            scaledDegree = yzDegree
-        } else if yzDegree < 45 && yzDegree > 0 {
-            scaledDegree = -yzDegree
-        } else if yzDegree > 135 {
-            scaledDegree = 180 - yzDegree
-        } else if yzDegree < -135 {
-            scaledDegree = yzDegree + 180
-        }
-        
-        return scaledDegree
-    }
-    
-    func xzToScale(xzDegree: Int)-> Int{
-        var scaledDegree: Int = 0
-        
-        if xzDegree > -45 && xzDegree < 0{
-            scaledDegree = xzDegree
-        } else if xzDegree < 45 && xzDegree > 0{
-            scaledDegree = -xzDegree
-        } else if xzDegree > 135 {
-            scaledDegree = 180 - xzDegree
-        } else if xzDegree < -135 {
-            scaledDegree = xzDegree + 180
-        }
-        
-        return scaledDegree
     }
     
     override func viewDidLoad() {

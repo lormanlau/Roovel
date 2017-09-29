@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44DB97681F7DD38E00C27517 /* calculateXYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB97671F7DD38E00C27517 /* calculateXYZ.swift */; };
 		8DE276281F7C7DEC00007C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE276271F7C7DEC00007C4C /* AppDelegate.swift */; };
 		8DE2762A1F7C7DEC00007C4C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE276291F7C7DEC00007C4C /* art.scnassets */; };
 		8DE2762C1F7C7DEC00007C4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2762B1F7C7DEC00007C4C /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44DB97671F7DD38E00C27517 /* calculateXYZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculateXYZ.swift; sourceTree = "<group>"; };
 		8DE276241F7C7DEC00007C4C /* Roovel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roovel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE276271F7C7DEC00007C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE276291F7C7DEC00007C4C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				8DE276271F7C7DEC00007C4C /* AppDelegate.swift */,
 				8DE276291F7C7DEC00007C4C /* art.scnassets */,
 				8DE2762B1F7C7DEC00007C4C /* ViewController.swift */,
+				44DB97671F7DD38E00C27517 /* calculateXYZ.swift */,
 				8DE276571F7C868B00007C4C /* vectorEx.swift */,
 				8DE2762D1F7C7DEC00007C4C /* Main.storyboard */,
 				8DE276301F7C7DEC00007C4C /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 			files = (
 				8DE2762C1F7C7DEC00007C4C /* ViewController.swift in Sources */,
 				8DE276281F7C7DEC00007C4C /* AppDelegate.swift in Sources */,
+				44DB97681F7DD38E00C27517 /* calculateXYZ.swift in Sources */,
 				8DE276581F7C868B00007C4C /* vectorEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
